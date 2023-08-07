@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,47 @@
             <button id="cal" class="btn">Calculate🤔</button>
             <p id="ans"></p>
         </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box">
+            <h3>Please enter the value of Temperature🥵</h3>
+            <div class="flex">
+                <input type="number" class="takeInput" id="takeInput">
+                <select name="selectUnit" id="selectUnit" class="selectUnit">
+                    <option value="cel">Celcius</option>
+                    <option value="kel">fahrenheit</option>
+                </select>
+            </div>
+            <button id="cal" class="btn">Calculate🤔</button>
+            <p id="ans"></p>
+        </div> -->
+
+        <form class="box" onsubmit="calculateTemp(); return false" >
+            <label class="para">Please enter the value of Temperature🥵</label>
+            <br/>
+            <input type="number" class="takeInput" id="takeInput" placeholder="Enter Value">
+            <select name="selectUnit" id="selectUnit" class="takeInput">
+                <option value="cel">Celcius</option>
+                <option value="kel">fahrenheit</option>
+            </select>
+            <br/>
+            <input type="submit" name="submit" id="submit" class="submit">
+            <br/>
+            <span id="ans"></span>
+        </form>
     </div>
     <script src="app.js"></script>
 </body>
